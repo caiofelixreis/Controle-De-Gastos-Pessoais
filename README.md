@@ -1,38 +1,60 @@
 # Controle-De-Gastos-Pessoais
 
 Caio & Isabel
-
+*colors*
+cor de fundo - #090421
+rosinha - #f59dd4
+rosa claro - #e3d2e6
+roxo - #bb4ed8
+azul escuro - #1a19e2
+roxo escuro - #301e56
+roxo vivo - #5d23d7
 
 *Requisitos do Projeto*
 
-[] Obrigatório criacao de um usuario para utilizar o sistema.
-[] Campos -> `ID, NOME, EMAIL, SENHA, TELEFONE, CEP, STATUS`.
-[] Tela para login / Cadastro Usuario.
-[] Tela para alteracao Perfil / Senha.
-[] Futuramente Buscar de uma api o endereco.
+[ ] Obrigatório criacao de um usuario para utilizar o sistema.
+[ ] Campos -> `ID, NOME, EMAIL, SENHA, TELEFONE, CEP, STATUS`.
+[ ] Tela para login / Cadastro Usuario.
+[ ] Tela para alteracao Perfil / Senha.
+[ ] Futuramente Buscar de uma api o endereco.
 
 *Regra para criacao do painel adminstrativo*
 
-[] Tela com menu do sistema com as opcoes para acessar `CONTAS, PERFIL, CATEGORIA, LANCAMENTOS`.
-[] Alertas de situacao financeira ( *Alerta ou Cores* ).
-[] Exibicao do total de `ENTRADAS, SAIDAS, SALDO`.
-[] Graficos da situacao financeira.
+[ ] Tela com menu do sistema com as opcoes para acessar `CONTAS, PERFIL, CATEGORIA, LANCAMENTOS`.
+[ ] Alertas de situacao financeira ( *Alerta ou Cores* ).
+[ ] Exibicao do total de `ENTRADAS, SAIDAS, SALDO`.
+[ ] Graficos da situacao financeira.
 
 *Regra para criacao de contas*
 
-[] Obrigatório criação de uma conta para o para utilizar o sistema.
-[] Campos -> `ID, NOME, TIPO, VALOR, CATEGORIA, STATUS`.
-[] Criar uma tabela Categoria`ID, NOME` *obrigatóriocadastrar antes das contas*.
-[] Tela para cadastrar categoria.
-[] Tela para contas.
+[ ] Obrigatório criação de uma conta para o para utilizar o sistema.
+[ ] Campos -> `ID, NOME, TIPO, VALOR, CATEGORIA, STATUS`.
+[ ] Criar uma tabela Categoria`ID, NOME` *obrigatóriocadastrar antes das contas*.
+[ ] Tela para cadastrar categoria.
+[ ] Tela para contas.
 
 *Regra para criacao dos lancamentos*
 
-[] Campos -> `ID, DESCRICAO, CONTA, VALOR, DATA, HORA`.
-[] Tela para Cadastrar Lançamentos.
-[] Validação dos campos *vazio, incorreto / mascaras*.
-[] Alertas de situação financeira *alerta ou cores*.
-[] Exibição do total de `ENTRADAS, TOTAL DE SAIDAS, SALDO`.
+[ ] Campos -> `ID, DESCRICAO, CONTA, VALOR, DATA, HORA`.
+[ ] Tela para Cadastrar Lançamentos.
+[ ] Validação dos campos *vazio, incorreto / mascaras*.
+[ ] Alertas de situação financeira *alerta ou cores*.
+[ ] Exibição do total de `ENTRADAS, TOTAL DE SAIDAS, SALDO`.
+
+-------------------------------------------------------------------------------------------------------
+*FLUXOGRAMA*
+
+[1] CRIAR TELA CADASTRO
+    [0.1] CRIAR TELA LOGIN
+
+-------------------------------------------------------------------------------------------------------
+*nav*
+100% largura
+cor branca
+40px altura
+
+
+
 
 
 
