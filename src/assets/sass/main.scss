@@ -1,0 +1,73 @@
+$paddingCaixas:6% 5%;
+
+@mixin caixaInicial() {
+    margin: 10px;
+    border-radius: 24px;
+}
+@mixin sombraCaixa() {
+    box-shadow:0px 5px 0px 0px #242526;
+}
+main{
+    margin-top: -5%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #inicial{
+        display: flex;
+        
+
+        .login{
+            width: 250px;
+            background: transparent;
+            padding: $paddingCaixas;
+            display: flex;
+            flex-direction: column;
+            transition: 500ms;
+            border: 1px solid $rosaClaro;
+            @include caixaInicial();
+    
+        }
+
+        .cadastro{
+            width: 250px;
+            background-color: transparent;
+            padding: $paddingCaixas;
+            display: flex;
+            flex-direction: column;
+            transition: 500ms;
+            @include caixaInicial()
+        }
+
+        h2{
+            font-family: $ComfortaaLight;
+            color: $primaryColor;
+            margin-bottom: 10%;
+        }
+        p{
+            margin-top: 15%;
+            font-family: $UbuntuLightItalic;
+            color: $primaryColor;
+            text-align: center;
+            cursor: pointer;
+        }
+        input{
+            outline: none;
+            border: none;
+            border: 1px solid $roxoEscuro;
+            margin:  5px 0px;
+            font-family: $ComfortaaSemiBold;
+            padding: 5%;
+            border-radius: 40px;
+            background-color: $primaryColor;
+            color: $roxoEscuro;
+            
+        }
+    }
+}
+::-webkit-input-placeholder{
+    font-family: $ComfortaaSemiBold;
+    color: $roxoEscuro;
+}

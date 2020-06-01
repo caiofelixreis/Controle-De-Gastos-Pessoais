@@ -1,0 +1,23 @@
+{
+  "name": "controleDeGastosPessoais",
+  "version": "1.0.0",
+  "description": "Caio & Isabel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiofelixreis/Controle-De-Gastos-Pessoais.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiofelixreis/Controle-De-Gastos-Pessoais/issues"
+  },
+  "homepage": "https://github.com/caiofelixreis/Controle-De-Gastos-Pessoais#readme",
+  "dependencies": {
+    "sass": "^1.26.5"
+  }
+}

@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu BoldItalic";
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Italic";
+  src: url("../fonts/Ubuntu-Italic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu LightItalic";
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu MediumItalic";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Comfortaa Bold";
+  src: url("../fonts/Comfortaa-Bold.ttf");
+}
+@font-face {
+  font-family: "Comfortaa Light";
+  src: url("../fonts/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: "Comfortaa Medium";
+  src: url("../fonts/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: "Comfortaa Regular";
+  src: url("../fonts/Comfortaa-Regular.ttf");
+}
+@font-face {
+  font-family: "Comfortaa SemiBold";
+  src: url("../fonts/Comfortaa-SemiBold.ttf");
+}
+* {
+  margin: 0;
+}
+
+body {
+  background: #301e56;
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav h1 {
+  color: #fff;
+  font-family: Comfortaa Bold;
+  font-size: 2rem;
+  margin: 1%;
+  padding: 1%;
+}
+
+main {
+  margin-top: -5%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #inicial {
+  display: flex;
+}
+main #inicial .login {
+  width: 250px;
+  background: transparent;
+  padding: 6% 5%;
+  display: flex;
+  flex-direction: column;
+  transition: 500ms;
+  border: 1px solid #e3d2e6;
+  margin: 10px;
+  border-radius: 24px;
+}
+main #inicial .cadastro {
+  width: 250px;
+  background-color: transparent;
+  padding: 6% 5%;
+  display: flex;
+  flex-direction: column;
+  transition: 500ms;
+  margin: 10px;
+  border-radius: 24px;
+}
+main #inicial h2 {
+  font-family: Comfortaa Light;
+  color: #fff;
+  margin-bottom: 10%;
+}
+main #inicial p {
+  margin-top: 15%;
+  font-family: Ubuntu LightItalic;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+main #inicial input {
+  outline: none;
+  border: none;
+  border: 1px solid #301e56;
+  margin: 5px 0px;
+  font-family: Comfortaa SemiBold;
+  padding: 5%;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #301e56;
+}
+
+::-webkit-input-placeholder {
+  font-family: Comfortaa SemiBold;
+  color: #301e56;
+}
+
+/*# sourceMappingURL=estilo.css.map */
