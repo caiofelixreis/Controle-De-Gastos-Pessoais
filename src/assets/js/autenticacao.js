@@ -10,12 +10,17 @@ document.querySelector('#btnEntrar').addEventListener('click', () => {
     usuarios.forEach(usuario => {
         if(usuario.email === inputs[0].value){
             if(usuario.senha === inputs[1].value){
+                
                 modal('Logado!!' , 'alert')
+                
                 inputs.forEach(input => input.value = '')
+
                 sessionStorage.setItem('logado','true')
 
-                irPara('src/assets/paginas/menu.html')
-
+                setTimeout(()=>{
+                    irPara('menu.html')
+                },2250)
+                
             }else{
                 modal('Erro' , 'alert')
             }
@@ -73,5 +78,5 @@ function modal(html, tipo){
 }
 
 function irPara(caminho){
-    window.open(caminho)
+    window.location.href = caminho 
 }

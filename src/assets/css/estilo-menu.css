@@ -40,7 +40,7 @@
   }
   @font-face {
     font-family: "Comfortaa Medium";
-    src: url("../fonts/Comfortaa-Light.ttf");
+    src: url("../fonts/Comfortaa-Medium.ttf");
   }
   @font-face {
     font-family: "Comfortaa Regular";
@@ -72,4 +72,102 @@
     font-size: 2rem;
     margin: 1%;
     padding: 1%;
+}
+main{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+#addGasto{
+  margin-top: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 1%;
+  border-radius: 10px;
+  box-shadow: 0px 30px 20px 0px #0009  ;
+}
+#addGasto > h1{
+  font-size: 1.7rem;
+  font-family: Comfortaa Medium;
+  color: #301e56;
+  margin-bottom: 20px;
+}
+#addGasto > input{
+  width: 300px;
+  margin: 10px 0px;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-family: Comfortaa Light;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  color: #301e56;
+  border-bottom: 1px solid #301e56 ;
+}
+::-webkit-input-placeholder {
+  font-family: Comfortaa Light;
+  color: #301e56;
+}
+#addGasto > i{
+  margin-top: 20px;
+  color: rgb(255, 38, 0);
+  font-size: 3rem;
+  transition: 300ms;
+  padding: 10px 11px;
+  cursor: pointer;
+}
+#addGasto{
+  border-top: 10px solid rgb(255, 38, 0);
+  border-radius: 15px;
+}
+
+/* RECEBER */
+
+#addReceber{
+  margin-top: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 1%;
+  border-radius: 10px;
+  box-shadow: 0px 30px 20px 0px #0009  ;
+}
+#addReceber > h1{
+  font-size: 1.7rem;
+  font-family: Comfortaa Medium;
+  color: #301e56;
+  margin-bottom: 20px;
+}
+#addReceber > input{
+  width: 300px;
+  margin: 10px 0px;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-family: Comfortaa Light;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  color: #301e56;
+  border-bottom: 1px solid #301e56 ;
+}
+#addReceber > i{
+  margin-top: 20px;
+  color: springgreen;
+  font-size: 3rem;
+  transition: 300ms;
+  padding: 10px 11px;
+  cursor: pointer;
+}
+
+#addReceber{
+  border-top: 10px solid springgreen;
+  border-radius: 15px;
 }
