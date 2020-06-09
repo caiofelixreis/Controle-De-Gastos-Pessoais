@@ -1,8 +1,7 @@
 
 function estaLogado(){
-    if(!sessionStorage.getItem('logado')){
+    if(!localStorage.getItem('logado')){
         window.location.href = 'index.html'
-        console.log('oi')
     }
 }
 
