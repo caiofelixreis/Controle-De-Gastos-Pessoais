@@ -1,85 +1,138 @@
 @font-face {
-    font-family: "Ubuntu Bold";
-    src: url("../fonts/Ubuntu-Bold.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu BoldItalic";
-    src: url("../fonts/Ubuntu-BoldItalic.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu Italic";
-    src: url("../fonts/Ubuntu-Italic.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu Light";
-    src: url("../fonts/Ubuntu-Light.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu LightItalic";
-    src: url("../fonts/Ubuntu-LightItalic.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu Medium";
-    src: url("../fonts/Ubuntu-Medium.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu MediumItalic";
-    src: url("../fonts/Ubuntu-MediumItalic.ttf");
-  }
-  @font-face {
-    font-family: "Ubuntu Regular";
-    src: url("../fonts/Ubuntu-Regular.ttf");
-  }
-  @font-face {
-    font-family: "Comfortaa Bold";
-    src: url("../fonts/Comfortaa-Bold.ttf");
-  }
-  @font-face {
-    font-family: "Comfortaa Light";
-    src: url("../fonts/Comfortaa-Light.ttf");
-  }
-  @font-face {
-    font-family: "Comfortaa Medium";
-    src: url("../fonts/Comfortaa-Medium.ttf");
-  }
-  @font-face {
-    font-family: "Comfortaa Regular";
-    src: url("../fonts/Comfortaa-Regular.ttf");
-  }
-  @font-face {
-    font-family: "Comfortaa SemiBold";
-    src: url("../fonts/Comfortaa-SemiBold.ttf");
-  }
-  * {
-    margin: 0;
-  }
-  
-  body {
-    background: #301e56;
-  }
-  
-  nav {
-    width: 100%;
-    background-color: transparent;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav h1 {
-    color: #fff;
-    font-family: Comfortaa Bold;
-    font-size: 2rem;
-    margin: 1%;
-    padding: 1%;
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf");
 }
-main{
+
+@font-face {
+  font-family: "Ubuntu BoldItalic";
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Italic";
+  src: url("../fonts/Ubuntu-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu LightItalic";
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu MediumItalic";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa Bold";
+  src: url("../fonts/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa Light";
+  src: url("../fonts/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa Medium";
+  src: url("../fonts/Comfortaa-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa Regular";
+  src: url("../fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa SemiBold";
+  src: url("../fonts/Comfortaa-SemiBold.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: #301e56;
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav h1 {
+  color: #fff;
+  font-family: Comfortaa Bold;
+  font-size: 2rem;
+  margin: 1%;
+  padding: 1%;
+}
+
+nav>div {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  color: #301e56;
+  font-family: Comfortaa SemiBold;
+  background-color: #fff;
+  padding: 30px 15px;
+  border-radius: 24px;
+  border-top: 5px solid rgb(255, 238, 0);
+}
+nav > div > input{
+  margin-left: 10px;
+  outline: none;
+  font-family: Comfortaa light;
+  border: none;
+  border-bottom: 1px dotted #301e56;
+}
+
+nav #perfil{
+  position: absolute;
+  right: 20px;
+  font-family: Comfortaa Bold;
+  color: #fff;
+  display: flex;
+  flex-direction:row-reverse ;
+  align-items: center;
+  justify-content: space-around;
+}
+nav #perfil > i{
+  font-size: 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+main {
   width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-around;
 }
-#addGasto{
+
+#addGasto {
   margin-top: 100px;
   width: 350px;
   display: flex;
@@ -89,15 +142,17 @@ main{
   align-items: center;
   padding: 3% 1%;
   border-radius: 10px;
-  box-shadow: 0px 30px 20px 0px #0009  ;
+  box-shadow: 0px 30px 20px 0px #0009;
 }
-#addGasto > h1{
+
+#addGasto>h1 {
   font-size: 1.7rem;
   font-family: Comfortaa Medium;
   color: #301e56;
   margin-bottom: 20px;
 }
-#addGasto > input{
+
+#addGasto>input {
   width: 300px;
   margin: 10px 0px;
   font-size: 1.1rem;
@@ -107,13 +162,15 @@ main{
   border: none;
   outline: none;
   color: #301e56;
-  border-bottom: 1px solid #301e56 ;
+  border-bottom: 1px solid #301e56;
 }
+
 ::-webkit-input-placeholder {
   font-family: Comfortaa Light;
   color: #301e56;
 }
-#addGasto > i{
+
+#addGasto>i {
   margin-top: 20px;
   color: rgb(255, 38, 0);
   font-size: 3rem;
@@ -121,14 +178,15 @@ main{
   padding: 10px 11px;
   cursor: pointer;
 }
-#addGasto{
+
+#addGasto {
   border-top: 10px solid rgb(255, 38, 0);
   border-radius: 15px;
 }
 
 /* RECEBER */
 
-#addReceber{
+#addReceber {
   margin-top: 100px;
   width: 350px;
   display: flex;
@@ -138,15 +196,17 @@ main{
   align-items: center;
   padding: 3% 1%;
   border-radius: 10px;
-  box-shadow: 0px 30px 20px 0px #0009  ;
+  box-shadow: 0px 30px 20px 0px #0009;
 }
-#addReceber > h1{
+
+#addReceber>h1 {
   font-size: 1.7rem;
   font-family: Comfortaa Medium;
   color: #301e56;
   margin-bottom: 20px;
 }
-#addReceber > input{
+
+#addReceber>input {
   width: 300px;
   margin: 10px 0px;
   font-size: 1.1rem;
@@ -156,9 +216,10 @@ main{
   border: none;
   outline: none;
   color: #301e56;
-  border-bottom: 1px solid #301e56 ;
+  border-bottom: 1px solid #301e56;
 }
-#addReceber > i{
+
+#addReceber>i {
   margin-top: 20px;
   color: springgreen;
   font-size: 3rem;
@@ -167,7 +228,78 @@ main{
   cursor: pointer;
 }
 
-#addReceber{
+#addReceber {
   border-top: 10px solid springgreen;
   border-radius: 15px;
+}
+
+#divCategoria{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #301e56;
+  font-family: Comfortaa Light;
+}
+#divCategoria > select{
+  margin-top: 10px;
+  width: 90%;
+  padding: 2px;
+  border-radius: 5px;
+  font-family: Comfortaa Light;
+}
+
+
+#modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: #0005;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#fechar{
+  position: relative;
+  top: -70px;
+  left: -70px;
+}
+.modal-body{
+  background-color: #fff;
+  padding: 90px 100px;
+  font-family:Comfortaa Bold ;
+  color: #301e56;
+  border-radius: 24px;
+  font-size: 1.3rem;
+}
+
+.aparecer{
+  animation: aparecer 300ms forwards;
+}
+.sumir{
+  animation: sumir 300ms forwards;
+}
+
+
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -50px ,0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 0 ,0);
+  }
+}
+@keyframes sumir{
+  0%{
+    opacity: 1;
+    transform: translate3d(0, 0 ,0);
+  }
+  100%{
+    opacity: 0;
+    transform: translate3d(0, -50px ,0);
+  }
 }

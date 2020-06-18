@@ -29,7 +29,7 @@ roxo vivo - #5d23d7
 
 [ ] Obrigatório criação de uma conta para o para utilizar o sistema.
 [ ] Campos -> `ID, NOME, TIPO, VALOR, CATEGORIA, STATUS`.
-[ ] Criar uma tabela Categoria`ID, NOME` *obrigatóriocadastrar antes das contas*.
+[ ] Criar uma tabela Categoria`ID, NOME` *obrigatório cadastrar antes das contas*.
 [ ] Tela para cadastrar categoria.
 [ ] Tela para contas.
 
@@ -48,11 +48,49 @@ roxo vivo - #5d23d7
     [0.1] CRIAR TELA LOGIN
 
 -------------------------------------------------------------------------------------------------------
-*nav*
-100% largura
-cor branca
-40px altura
+*Regras que faltam*
+-Tela para alterar perfil e senha
+-Terminar regra dois:
+2 – Regra para Criação do Painel Administrativo
 
+Tela com menu do sistema com as opções para acessar
+contas / perfil / categoria / lançamentos
+
+Alertas de situação financeira( alerta ou cores)
+
+Exibição do total de Entradas / Total de Saídas / Saldo
+
+Gráficos da situação financeira
+
+- 3 – Regra para Criação de Contas
+
+Obrigatório criação de uma conta para o para utilizar o
+sistema
+
+Campos -> Id;nome; tipo(entrada/saida); valor;categoria
+
+Criar uma tabela Categoria ( id; nome;) ( obrigatório
+cadastrar antes das contas)
+
+Tela para Cadastrar Categoria
+
+Tela para Contas
+
+4 – Regra para Criação dos Lançamentos
+
+Campos -> Id; descricao; conta; valor; data; hora
+
+Tela para Cadastrar Lançamentos
+
+Validação dos campos ( vazio, incorreto/ mascaras)
+
+Alertas de situação financeira( alerta ou cores)
+
+Exibição do total de Entradas / Total de Saídas / Saldo
+
+5 – Regra para Controle de Versão
+
+Vamos utilizar o github para controlar nosso projeto
 
 
 
