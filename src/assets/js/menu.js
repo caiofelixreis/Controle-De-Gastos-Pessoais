@@ -63,8 +63,27 @@ function abrePerfil(usuario) {
     const modalBox = document.querySelector('#modal')
     // modalBox.classList.remove('sumir')
 
+    console.log(usuario)
 
-    modal(`<i id="fechar" class="far fa-times-circle"></i><h1>${usuario[0].email}</h1>`)
+    modal(`
+    <i id="fechar" class="far fa-times-circle"></i>
+    
+    <div class="control">
+        <label>Nome</label>
+        <input value=${usuario[0].nome}>
+    </div>
+    <div class="control">
+        <label>Email</label>
+        <input value=${usuario[0].email}>
+    </div>
+    <div class="control">
+        <label>Senha</label>
+        <input type="password" value=${usuario[0].senha}>
+    </div>
+    <div class="control">
+        <button>Editar</button>
+    </div>
+    `)
 
     const fechar = document.querySelector('#fechar')
     fechar.addEventListener('click', () => {

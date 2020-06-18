@@ -263,16 +263,53 @@ main {
 }
 #fechar{
   position: relative;
-  top: -70px;
+  top: -30px;
   left: -70px;
+  font-size: 1.5rem;
 }
 .modal-body{
   background-color: #fff;
-  padding: 90px 100px;
+  padding: 50px 100px;
   font-family:Comfortaa Bold ;
   color: #301e56;
   border-radius: 24px;
   font-size: 1.3rem;
+}
+
+.control{
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.control input{
+  border: none;
+  color: #301e56;
+  font-family: Comfortaa Light;
+  border-bottom: 2px dotted #301e56;
+  font-size: 1.2rem;
+  outline: none;
+}
+.control button{
+  font-family:Comfortaa Bold;
+  background-color: #301e56;
+  outline: none;
+  border: none;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 3%;
+  color: #FFF;
+  font-size: 1.1rem;
+  width:200px;
+  transition: 500ms;
+  margin-left: 50%;
+  cursor: pointer;
+}
+.control button:hover{
+  background-color: #FFF;
+  outline: none;
+  color: #301e56;
+  border: 2px solid #301e56;
 }
 
 .aparecer{
