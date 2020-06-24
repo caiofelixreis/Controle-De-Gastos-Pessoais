@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Ubuntu Bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu BoldItalic";
+    src: url("../fonts/Ubuntu-BoldItalic.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu Italic";
+    src: url("../fonts/Ubuntu-Italic.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu Light";
+    src: url("../fonts/Ubuntu-Light.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu LightItalic";
+    src: url("../fonts/Ubuntu-LightItalic.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu Medium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu MediumItalic";
+    src: url("../fonts/Ubuntu-MediumItalic.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu Regular";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Comfortaa Bold";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Comfortaa Light";
+    src: url("../fonts/Comfortaa-Light.ttf");
+  }
+  @font-face {
+    font-family: "Comfortaa Medium";
+    src: url("../fonts/Comfortaa-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Comfortaa Regular";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Comfortaa SemiBold";
+    src: url("../fonts/Comfortaa-SemiBold.ttf");
+  }
+  
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#botaoMenu{
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    left:10px;
+    top: 30px;
+}
+.menu{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    list-style-type: none;
+    background-color: #e3d2e6;
+    padding: 10px 25px;
+    font-family: 'Comfortaa SemiBold';
+    border-radius: 24px;
+    border-top-left-radius: 0;
+    box-shadow: 0px 10px 10px 0px #0009  ;
+    
+}
+.menu > li {
+    text-decoration: none;
+    padding: 15px 0;
+}
+.menu  a {
+    text-decoration: none;
+    color: #301e56;
+    text-shadow: 2px 1px #fff;
+    font-size: 1.2rem;
+}
+
+table{
+    margin: auto;
+    /* background-color: #e3d2e6; */
+    /* border: 2px solid #fff; */
+    padding: 20px;
+}
+table th{
+    font-family:Comfortaa Bold ;
+    padding: 10px 0;
+    border: 1px dashed white ;
+    color: #fff;
+}
+table td{
+    font-family:Comfortaa Bold ;
+    padding: 10px 30px;
+    border: 1px dashed white ;
+    color: #fff;
+}

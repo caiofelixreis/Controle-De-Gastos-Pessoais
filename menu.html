@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="src/assets/css/estilo-menu.css">
+    <script src="https://kit.fontawesome.com/633062fc25.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b4dcbcf938.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Ctrl$</h1>
+        <div>
+            Criar Categoria:
+            <input type="text" id="addCategoria">
+        </div>
+        <section id="perfil">
+            <i id="abrePerfil" class="fas fa-user-circle"></i>
+        </section>
+        <section id="saldo"></section>
+    </nav>
+    <main>
+        <section id="addReceber">
+            <h1>Quanto você recebeu??</h1>
+            <input type="text" name="ganho" placeholder="Valor">
+            <input type="text" name="ganho" placeholder="Descrição">
+            <div id="divCategoria">
+                <label>Categoria</label>
+                <select id="selectCategoriaVerde" name="ganho">
+                    <option value="">Selecione...</option>
+                </select>
+            </div>
+            
+            <i class="fas fa-plus-circle" id="lancameto"></i>
+        </section>
+        <section id="addGasto">
+            <h1>Com o que você gastou?</h1>
+            <input type="text" name="gasto" placeholder="Valor">
+            <input type="text" name="gasto" placeholder="Descrição">
+            <div id="divCategoria">
+                <label>Categoria</label>
+                <select id="selectCategoriaVermelho" name="gasto">
+                    <option value="">Selecione...</option>
+                </select>
+            </div>
+
+            <i class="fas fa-minus-circle" id="gastoClick"></i>
+        </section>
+    </main>
+
+    <div id="modal"></div>
+
+    <script type="module" src="src/assets/js/menu.js"></script>
+</body>
+
+</html>

@@ -58,7 +58,8 @@ document.querySelector('#btnCadastrar').addEventListener('click', () => {
         cep: inputs[2].value,
         email: inputs[3].value,
         senha: inputs[4].value,
-        status: 'Ativo'
+        status: 'Ativo',
+        saldo:0
     })
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios))

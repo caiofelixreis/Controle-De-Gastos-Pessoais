@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/css/estilo.css">
+    <title>Seu Controle de Gastos</title>
+    <script src="https://kit.fontawesome.com/b4dcbcf938.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/assets/css/paineladm.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Painel Administrativo <i class="fas fa-align-right iconeTitulo"></i> </h1>
+        <ul>
+            <i class="fas fa-bars icone-menu" id="botaoMenu" clicado="false"></i>
+
+            <div class="menu">
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="contas.html">Contas</a></li>
+                <li><a href="categoria.html">Categoria</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+            </div>
+
+        </ul>
+    </nav>
+    <section id="usuarios">
+        <table >
+            <thead >
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Endereco</th>
+                    <th>Status</th>
+                    <th>- -</th>
+                </tr>
+            </thead>
+            <tbody id="linhasUsuario">
+                
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+    <script type="module" src="src/assets/js/paineladm.js"></script>
+</body>
+
+</html>

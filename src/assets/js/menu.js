@@ -34,7 +34,7 @@ function render() {
 
     document.querySelector('#abrePerfil').addEventListener('click', () => { abrePerfil(usuarioLogado) })
 
-    console.log(usuarioLogado)
+
 
 }
 
@@ -94,7 +94,7 @@ function abrePerfil(usuario) {
             modalBox.innerHTML = ''
             modalBox.style.display = 'none'
         }, 300)
-        
+
     })
 
 }
@@ -123,6 +123,105 @@ function modal(html, tipo) {
     }
 }
 
+
+document.querySelector('#lancameto').addEventListener('click', () => {
+    const inputs = document.querySelectorAll('[name=ganho]')
+
+
+
+    const logado = localStorage.getItem('logado')
+    const usuarios = JSON.parse(localStorage.getItem('usuarios'))
+
+    const userDono = usuarios.findIndex(user => user.email == logado)
+
+    if (!localStorage.getItem('lancamentos')) {
+        localStorage.setItem('lancamentos', '[]')
+    }
+
+    const lancamentos = JSON.parse(localStorage.getItem('lancamentos'))
+
+    lancamentos.push({
+        usuario: userDono,
+        valor: inputs[0].value,
+        descricao: inputs[1].value,
+        categoria: inputs[2].value
+    })
+
+    localStorage.setItem('lancamentos', JSON.stringify(lancamentos))
+
+    modal('Prontinho ...', 'alert')
+
+    setTimeout(()=>{
+        window.location.reload()
+    },2350)
+    
+})
+
+document.querySelector('#gastoClick').addEventListener('click', () => {
+    const inputs = document.querySelectorAll('[name=gasto]')
+
+
+
+    const logado = localStorage.getItem('logado')
+    const usuarios = JSON.parse(localStorage.getItem('usuarios'))
+
+    const userDono = usuarios.findIndex(user => user.email == logado)
+
+    if (!localStorage.getItem('gasto')) {
+        localStorage.setItem('gasto', '[]')
+    }
+
+    const gasto = JSON.parse(localStorage.getItem('gasto'))
+
+    gasto.push({
+        usuario: userDono,
+        valor: inputs[0].value,
+        descricao: inputs[1].value,
+        categoria: inputs[2].value
+    })
+
+    localStorage.setItem('gasto', JSON.stringify(gasto))
+
+    modal('Prontinho ...', 'alert')
+
+    setTimeout(()=>{
+        window.location.reload()
+    },2350)
+
+})
+
+function saldo() {
+
+
+    const logado = localStorage.getItem('logado')
+    const usuarios = JSON.parse(localStorage.getItem('usuarios'))
+    const userDono = usuarios.findIndex(user => user.email == logado)
+
+    const lancamentos = JSON.parse(localStorage.getItem('lancamentos'))
+
+
+    const lancamentosUsuario = lancamentos.map(item => {
+        if (item.usuario == userDono) {
+            return item.valor
+        }
+    })
+
+    const gasto = JSON.parse(localStorage.getItem('gasto'))
+
+    const gastoUsuario = gasto.map(item => {
+        if (item.usuario == userDono) {
+            return item.valor
+        }
+    })
+
+
+    const saldo = lancamentosUsuario.reduce((accumulator, currentValue) => accumulator + currentValue) - gastoUsuario.reduce((accumulator, currentValue) => accumulator + currentValue)
+    console.log(saldo)
+    document.querySelector('#saldo').innerHTML += `R$ ${saldo.toFixed(2)}`
+
+}
+
+saldo()
 
 render()
 estaLogado()
